@@ -1,0 +1,72 @@
+---
+import MainLayout from "../layout/main-layout.astro"
+import Header from "../components/header.astro";
+import Footer from "../components/footer.astro";
+import Asid from "../components/UI/asid.astro";
+---
+
+
+
+<MainLayout title="Services page" id="services">
+    <div class=" relative ">
+        
+        <h2 class="text-white text-[40px] pt-[22px] pl-[22px] ">SERVICES</h2>
+        <h1 class="logo-text absolute top-[-100px]">s</h1>
+        <div class="flex justify-between pl-[310px] pt-[90px] relative  ">
+            
+            <div class="w-[346px]">
+                <h3 class="text-[32px] text-white mb-[16px]">Brand Identity.</h3>
+                <p class="text-white text-[16px] mb-[32px]" style="letter-spacing: 0.32px;">Bringing the history of your brand to the
+                    forefront gives an emotional dimension to your
+                    visual identity, which is essential today more
+                    than ever in today's digital landscape.</p>
+                <h4 class="text-white text-[24px]">Know more</h4>
+            </div>
+            <div class="w-[346px]">
+                <h3 class="text-[32px] text-white mb-[16px]">Technology.</h3>
+                <p class="text-white text-[16px] mb-[32px]" style="letter-spacing: 0.32px;">Bringing the history of your brand to the
+                    forefront gives an emotional dimension to your
+                    visual identity, which is essential today more
+                    than ever in today's digital landscape.</p>
+                <h4 class="text-white text-[24px]">Know more</h4>
+            </div>
+            <div class="w-[346px]">
+                <h3 class="text-[32px] text-white mb-[16px]">UX/UI Design.</h3>
+                <p class="text-white text-[16px] mb-[32px]" style="letter-spacing: 0.32px;">Bringing the history of your brand to the
+                    forefront gives an emotional dimension to your
+                    visual identity, which is essential today more
+                    than ever in today's digital landscape.</p>
+                <h4 class="text-white text-[24px]">Know more</h4>
+            </div>
+        </div>
+        <h1 class="logo-text2 absolute left-[-150px] bottom-[-300px] z- 0">the cre8tive</h1>
+    </div>
+</MainLayout>
+
+<style lang="scss">
+    body{
+        font-family: Poppins;
+    }
+    .logo-text{
+      -webkit-text-stroke-width: 1;
+      -webkit-text-stroke: 3px rgba(54, 54, 54, 1);
+      font-family: Poppins;
+      font-size: 454px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%; /* 771.8px */
+      text-transform: lowercase;
+    }
+
+    .logo-text2{
+        -webkit-text-stroke-width: 1;
+-webkit-text-stroke: 2px rgba(77, 77, 77, 0.50);
+font-family: Poppins;
+font-size: 180px;
+font-style: normal;
+font-weight: 700;
+line-height: 175%; /* 315px */
+letter-spacing: 3.6px;
+text-transform: uppercase;
+    }
+  </style>

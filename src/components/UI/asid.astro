@@ -1,0 +1,43 @@
+---
+import AsidImage from "../../assets/icons/aside-icin.svg";
+---
+
+
+
+<div class="flex flex-col items-start gap-[157px] z-10">
+   <img src={AsidImage.src} alt="icon" class="relative left-[70px]">
+   <div class="flex flex-col items-center justify-center gap-[130px]">
+  <p>digital marketing</p>
+  <p>designing</p>
+  <p>development</p>
+   </div>
+</div>
+
+
+<style>
+  p{
+    transform: rotate(-90deg);
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    text-transform: uppercase;
+  }
+
+  img{
+        cursor: pointer;
+        animation: rotate 4s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>

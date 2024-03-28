@@ -1,0 +1,86 @@
+---
+import LogoImg from "../assets/icons/Logo.svg";
+
+
+---
+
+<script>
+ let drpMenu = document.querySelector("#dropdown-menu") as HTMLElement;
+ let btn = document.querySelector("#menu-btn") as HTMLButtonElement;
+  btn.addEventListener("click", () =>{
+     drpMenu.classList.toggle("dropdown-menu");
+     if(drpMenu.classList.contains("dropdown-menu")){
+         btn.innerHTML=`<i class="bi bi-list text-white text-[20px]"></i>`
+    }else{
+         btn.innerHTML=`<i class="bi bi-list-nested text-white text-[20px]"></i>`
+     }
+  });
+
+
+//  document.addEventListener("click", (e:any):void =>{
+//     if(!e.target.classList.contains("dropdown-menu")){
+//         drpMenu.classList.remove("dropdown-menu"); 
+//     }
+//  });
+</script>   
+
+<header>
+    <nav class="py-[32px]">
+        <div class="container mx-auto px-[10px]">
+           <div class="flex items-center justify-between relative">
+            <ul class="flex items-center gap-5">
+                <li class="flex items-center gap-5">
+                    <p class="text-[14px] text-white leading-[24.5px]">FB</p>
+                    <span class="block w-[5px] h-[5px] rounded-[50%] bg-[#FF7E21]"></span>
+                </li>
+                <li class="flex items-center gap-5">
+                    <p class="text-[14px] text-white leading-[24.5px] ">IN</p>
+                    <span class="block w-[5px] h-[5px] rounded-[50%] bg-[#FF7E21]"></span>
+                </li>
+                <li class="flex items-center gap-5">
+                    <p class="text-[14px] text-white leading-[24.5px] ">DR</p>
+                    <span class="block w-[5px] h-[5px] rounded-[50%] bg-[#FF7E21]"></span>
+                </li>
+                <li class="flex items-center gap-5">
+                    <p class="text-[14px] text-white leading-[24.5px] ">BE</p>
+                    <span class="block w-[5px] h-[5px] rounded-[50%] bg-[#FF7E21]"></span>
+                </li>
+                
+            </ul>
+            <img src={LogoImg.src} alt="logo">
+            <div class="flex items-center gap-10 z-10">
+                <i class="bi bi-search text-white pr-10 border-r border-white"></i>
+                <span class="flex items-center gap-2 ">
+                     <span class="text-white">MENU</span>
+                     <button id="menu-btn">
+                        <i class="bi bi-list text-white text-[20px]"></i>
+                     </button>
+                </span>
+            </div>
+            <ul id="dropdown-menu" class="dropdown-menu z-10 absolute top-[60px] right-3 rounded-xl bg-transparent border border-[#FFF] w-[200px] flex flex-col items-center">
+                <li class="w-[100%] py-2 flex items-center  hover:bg-[#201f1f] rounded-t-xl duration-150">
+                    <a href="/home" class="text-[20px] text-white text-center block mx-auto w-[100%]">HOME</a>
+                </li>
+                <li class="w-[100%] py-2 flex items-center  hover:bg-[#201f1f] rounded-t-xl duration-150">
+                    <a href="/about-us" class="text-[20px] text-white text-center block mx-auto w-[100%]">ABOUT US</a>
+                </li>
+                <li class="w-[100%] py-2 mx-auto hover:bg-[#201f1f] duration-150">
+                    <a href="/services" class="text-[20px] text-white  block text-center w-[100%]">SERVICES</a>
+                </li>
+                <li class="w-[100%] py-2 mx-auto hover:bg-[#201f1f] rounded-b-xl duration-150">
+                    <a href="/portfolio" class="text-[20px] text-white text-center block w-[100%]">PORTFOLIO</a>
+                </li>
+            </ul>
+           </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<style lang="scss">
+    .dropdown-menu{
+        display: none !important;
+    }
+
+</style>

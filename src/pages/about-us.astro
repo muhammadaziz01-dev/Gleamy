@@ -1,0 +1,46 @@
+---
+import MainLayout from "../layout/main-layout.astro"
+---
+
+
+
+<MainLayout title="About page" id="about">
+    
+    <div class="relative">
+        
+        <h2 class="text-white text-[40px] pt-[22px] pl-[22px] ">ABOUT US</h2>
+        <h1 class="logo-text absolute top-[-150px]">g</h1>
+        <div class="flex justify-center pl-[350px] pt-[50px] gap-[133px] relative">
+            
+            <div>
+                <h2 class="text-white text-[40px] mb-[34px]">we are a digital production team.</h2>
+                <p class="text-white text-[32px] mb-[13px] w-[1000px]">Gleamy is a leading design & software development agency 
+                    based in berlin. We help startups & Fortune 500 companies 
+                    delight humans on the other side of the screen.</p>
+                <p class="text-white text-[25px] relative z-20">Contact us</p>
+            </div>
+
+            
+            
+            <svg  class="absolute bottom-[58px] left-[765px]" xmlns="http://www.w3.org/2000/svg" width="45" height="35" viewBox="0 0 45 35" fill="none">
+                <path d="M0.985195 16.7301L45 0.830949L45 19.0002L0.985214 34.8992L0.985195 16.7301Z" fill="#FF7E21"/>
+              </svg>
+        </div>
+    </div>
+</MainLayout>
+
+
+<style lang="scss">
+    .logo-text{
+      -webkit-text-stroke-width: 1;
+      //  -webkit-text-stroke-color:2px #e2cdcd;
+      -webkit-text-stroke: 3px rgba(54, 54, 54, 1);
+      //  color: #363636;
+      font-family: Poppins;
+      font-size: 454px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 170%; /* 771.8px */
+      text-transform: lowercase;
+    }
+  </style>

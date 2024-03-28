@@ -1,0 +1,30 @@
+---
+import FooterIcon from "../assets/icons/footer-icon.svg"
+---
+<script>
+let footerIcon = document.querySelector("#footer-icon");
+
+</script>
+
+<footer>
+    <div class="container mx-auto px-[20px] flex items-end justify-end">
+         <img id="footer-icon" class="footer-icon" src={FooterIcon.src} alt="icon">
+    </div>
+</footer>
+
+<style>
+
+    .footer-icon{
+        cursor: pointer;
+        animation: rotate 4s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
